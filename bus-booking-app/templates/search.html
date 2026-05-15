@@ -1,0 +1,9 @@
+<h2>Available Buses</h2>
+
+{% for bus in buses %}
+    <p>
+        Bus ID: {{bus[0]}} |
+        {{bus[1]}} → {{bus[2]}}
+        <a href="/book/{{bus[0]}}">Book</a>
+    </p>
+{% endfor %}
